@@ -1,6 +1,6 @@
 cask "sofadeck" do
-  version "1.0.1"
-  sha256 "90df2e7728b6c14b2980035b54f6ff7fc113308c463cd2d9d1927d4f71fe0682"
+  version "1.0.2"
+  sha256 "38fabcfefd32b84e0af3267279d109c2ddb3a94c412c5e077222a2700c6e8945"
 
   url "https://www.sofadeck.com/download/SofaDeck-#{version}-mac.dmg"
   name "SofaDeck"
