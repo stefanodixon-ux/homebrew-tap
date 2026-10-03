@@ -4,7 +4,7 @@ cask "sofadeck" do
 
   url "https://www.sofadeck.com/download/SofaDeck-#{version}-mac.dmg"
   name "SofaDeck"
-  desc "Phone button deck and remote for your computer, over the home network"
+  desc "Phone button deck and voice remote for your computer, over the home network"
   homepage "https://www.sofadeck.com/"
 
   livecheck do
