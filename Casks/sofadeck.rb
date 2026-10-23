@@ -1,6 +1,6 @@
 cask "sofadeck" do
-  version "1.0.8"
-  sha256 "05d51cb772b96a2c6eef84be46b87742038259ec4198851275aadf73817b7f6b"
+  version "1.0.9"
+  sha256 "60890f2b330d74acbce6c844f238d9c6d528523c0632fda788f07835c552eef8"
 
   url "https://www.sofadeck.com/download/SofaDeck-#{version}-mac.dmg"
   name "SofaDeck"
@@ -8,10 +8,8 @@ cask "sofadeck" do
   homepage "https://www.sofadeck.com/"
 
   livecheck do
-    url "https://www.sofadeck.com/download/latest.json"
-    strategy :json do |json|
-      json["version"]
-    end
+    url "https://www.sofadeck.com/download/"
+    regex(/SofaDeck[._-]v?(\d+(?:\.\d+)+)[._-]mac\.dmg/i)
   end
 
   depends_on macos: ">= :big_sur"
